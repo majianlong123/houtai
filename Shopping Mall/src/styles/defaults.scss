@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB',
+    'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+a,
+a:hover,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.el-menu {
+  border-right: none !important;
+}
+// .el-table--striped .el-table__body tr.el-table__row--striped.current-row td, .el-table__body tr.current-row>td, .el-table__body tr.hover-row.current-row>td, .el-table__body tr.hover-row.el-table__row--striped.current-row>td, .el-table__body tr.hover-row.el-table__row--striped>td, .el-table__body tr.hover-row>td {
+//   background-color: #569ff3 !important;
+// }
+.header {
+  display: flex;
+  align-items: center;
+
+  > div {
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    > span {
+      margin-right: 5px;
+    }
+  }
+
+  .search {
+    display: flex;
+    align-items: center;
+
+    > div {
+      width: 200px;
+    }
+  }
+
+  [space] {
+    flex-grow: 1;
+  }
+}
+
+div /deep/ input[type=number] {
+  -moz-appearance:textfield;
+}
+div /deep/ input[type=number]::-webkit-inner-spin-button,
+div /deep/ input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.expand_form label{
+  color: #0CCD79;
+}
+
+.el-popover.popper{
+  padding: 0px 5px;
+  line-height: 1;
+  border-radius: 15px;
+  // background: #333;
+  // color:#F0F8FF;
+}
